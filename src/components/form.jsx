@@ -2,23 +2,44 @@ import React from 'react';
 
 function AppointmentForm() {
     return (
-        <div className="form-container">
-    <form className="form1" action="">
-      <label for="firstName" className="first-name">First Name</label>
-      <input id="firstName" type="text"/>
-
-      <label for="lastName" className="last-name">Last Name</label>
-      <input id="lastName" type="text"/>
-
-      <label for="age">Age</label>
-      <input id="age" type="text"/>
-
-      <label for="job">Age of Spouse (If Applicable)</label>
-      <input id="job" type="text"/>
-
-      <button>Submit</button>
-    </form>
-    </div>
+        <div class="container">
+  <form className="form-back">
+    <img className="logo-img" src="./BIG LOGO.jpg"/>
+    <ul class="flex-outer">
+      <li>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="Enter your first name here"/>
+      </li>
+      <li>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name here"/>
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here"/>
+      </li>
+      <li>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone here"/>
+      </li>
+      <li>
+        <label for="phone">ZipCode</label>
+        <input type="tel" id="phone" placeholder="Enter your phone here"/>
+      </li>
+      <li>
+        <label for="phone">Child Age (If Applicable)</label>
+        <input type="tel" id="phone" placeholder="Enter your phone here"/>
+      </li>
+      <li>
+      <label for="message">Message</label>
+        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+</div>
     )
     
 }
